@@ -64,3 +64,8 @@ async function checkLoggedIn(){
         document.getElementById('login').setAttribute('hidden', true);
     }
 }
+
+var logout = async function(){
+    sessionStorage.removeItem('username');
+    sessionStorage.removeItem('password');
+}
